@@ -1,0 +1,16 @@
+/*==UserStyle==
+@name Mastodon Widescreen
+@version 1.0.0
+@description Improves Mastodon Web experience for wide monitors
+@namespace github.com/ColinTimBarndt/mastodon
+@author Colin Tim Barndt
+@preprocessor stylus
+@homepageURL https://github.com/ColinTimBarndt/stylus_mastodon-themes
+@supportURL https://github.com/ColinTimBarndt/stylus_mastodon-themes
+@updateURL https://raw.githubusercontent.com/ColinTimBarndt/stylus_mastodon-themes/main/mastodon-widescreen.user.styl
+==/UserStyle==*/
+
+@-moz-document regexp("https?://(\\w+\\.)*\\w+\\.\\w+/web(/.*)?")
+    @media screen and (min-width: 631px)
+        .column
+            flex-grow: 1
