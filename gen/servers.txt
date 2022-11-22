@@ -1,0 +1,12 @@
+# This is a manually curated list of Mastodon instances.
+# Is yours not included on joinmastodon.org? Submit a pull-request!
+
+# DE: ZDF / Unterhaltungsfernsehen Ehrenfeld
+edi.social det.social
+
+# Furry
+meow.social
+vulpine.club
+claws.blue
+furries.club
+awoo.space

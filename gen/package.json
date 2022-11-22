@@ -1,0 +1,21 @@
+{
+  "name": "gen",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-servers": "node dist/servers.js > out/servers.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
