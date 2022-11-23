@@ -1,0 +1,25 @@
+/*==UserStyle==
+@name Mastodon Large Icons
+@version 1.0.0
+@description Enlarges Mastodon Web icons
+@namespace {{namespace}}
+@author Colin Tim Barndt
+@preprocessor stylus
+@homepageURL {{repo}}
+@supportURL {{repo}}/issues
+@updateURL {{raw-repo}}/main/{{fname}}
+==/UserStyle==*/
+
+$emoji-size = 20px
+$header-scale = 1.2
+
+@-moz-document {{servers}}
+    .emojione
+        width: $emoji-size
+        height: $emoji-size
+    
+    .column-header__icon
+        transform: scale($header-scale)
+        margin-right: calc(5px * $header-scale)
+    .drawer__tab > i
+        transform: scale($header-scale)
