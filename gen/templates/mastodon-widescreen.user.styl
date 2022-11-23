@@ -1,0 +1,16 @@
+/*==UserStyle==
+@name Mastodon Widescreen
+@version 1.0.1
+@description Improves Mastodon Web experience for wide monitors
+@namespace {{namespace}}
+@author Colin Tim Barndt
+@preprocessor stylus
+@homepageURL {{repo}}
+@supportURL {{repo}}/issues
+@updateURL {{raw-repo}}/main/{{fname}}
+==/UserStyle==*/
+
+@-moz-document {{servers}}
+    @media screen and (min-width: 631px)
+        .column
+            flex-grow: 1

@@ -5,5 +5,6 @@
         "target": "ESNext",
         "outDir": "dist",
         "esModuleInterop": true,
+        "resolveJsonModule": true,
     }
 }

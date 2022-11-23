@@ -6,7 +6,8 @@
   "scripts": {
     "prepare": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gen-servers": "node dist/servers.js > out/servers.txt"
+    "gen-servers": "node dist/servers.js > out/servers.txt",
+    "gen-styles": "node dist/styles.js"
   },
   "keywords": [],
   "author": "",

@@ -3,6 +3,19 @@ import fs from "fs/promises";
 
 main();
 
+async function main() {
+    const servers = await getServersFromFile();
+    servers.push(...await getServersFromJM());
+    const domains = [...new Set(servers.map(s => s.domain))];
+    domains.sort(); // stability
+    let first = true;
+    for (const domain of domains) {
+        if (first) first = false;
+        else process.stdout.write(", ");
+        process.stdout.write(`domain("${domain}")`)
+    }
+}
+
 interface ServerEntry {
     domain: string;
 }
@@ -38,16 +51,4 @@ async function getServersFromJM(): Promise<JMServerEntry[]> {
     if (response.status < 200 || response.status > 399)
         throw new Error(response.statusText);
     return await response.json() as JMServerEntry[];
-}
-
-async function main() {
-    const servers = await getServersFromFile();
-    servers.push(...await getServersFromJM());
-    const domains = new Set(servers.map(s => s.domain));
-    let first = true;
-    for (const domain of domains) {
-        if (first) first = false;
-        else process.stdout.write(", ");
-        process.stdout.write(`domain("${domain}")`)
-    }
 }
