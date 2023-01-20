@@ -1,0 +1,22 @@
+/*==UserStyle==
+@name Mastodon Ellipsis
+@version 1.0.0
+@description Limits the amount of lines in a toot that is not selected
+@namespace {{namespace}}
+@author Colin Tim Barndt
+@preprocessor stylus
+@homepageURL {{repo}}
+@supportURL {{repo}}/issues
+@updateURL {{raw-repo}}/main/{{fname}}
+
+@var range --lines "Maximum Lines" [5, 2, 16, 1]
+==/UserStyle==*/
+
+@-moz-document {{servers}}
+    .status .status__content .status__content__text.status__content__text--visible
+        display: -webkit-box
+        line-clamp: --lines
+        -webkit-line-clamp: --lines
+        box-orient: vertical
+        -webkit-box-orient: vertical
+        overflow: hidden

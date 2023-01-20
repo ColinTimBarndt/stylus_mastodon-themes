@@ -6,11 +6,13 @@ This is / will be a collection of themes made for Mastodon.
 | ---------- | -------------------------------------------------- | ------------------------------------------------------- |
 | Widescreen | Improves Mastodon Web experience for wide monitors | [![Install directly with Stylus]][widescreen.user.styl] |
 | Large UI   | Enlarges Mastodon Web icons and emoji              | [![Install directly with Stylus]][large-ui.user.styl]   |
+| Ellipsis   | Limits not selected posts to a few lines           | [![Install directly with Stylus]][ellipsis.user.styl]   |
 
 
 [Install directly with Stylus]: https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg
 [widescreen.user.styl]: https://raw.githubusercontent.com/ColinTimBarndt/stylus_mastodon-themes/main/mastodon-widescreen.user.styl
 [large-ui.user.styl]: https://raw.githubusercontent.com/ColinTimBarndt/stylus_mastodon-themes/main/mastodon-large-ui.user.styl
+[ellipsis.user.styl]: https://raw.githubusercontent.com/ColinTimBarndt/stylus_mastodon-themes/main/mastodon-ellipsis.user.styl
 
 ## How to install
 
